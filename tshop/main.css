@@ -1,0 +1,408 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+    font-size: medium;
+    background-size: cover;
+    background-color: #c0c0c066;
+    margin: 0;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.header {
+    padding: .9em;
+    display: flex;
+    justify-content: space-between;
+    background: darkgrey;
+}
+
+.header img {
+    width: 1.2em;
+    margin-top: 0;
+    cursor: pointer;
+}
+
+.header.img.menu {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    color: #38f738;
+    font-weight: bold;
+}
+
+.logo span {
+    color: navy;
+}
+
+nav {
+    height: fit-content;
+    width: 50%;
+    position: fixed;
+    background: darkgrey;
+    padding-left: 0;
+    margin: 0;
+    right: 0;
+    top: 0;
+    z-index: 999;
+    /* text-transform: uppercase; */
+    transform: translateX(100%);
+    transition: transform .5s ease-in-out;
+}
+
+nav.top-nav {
+    text-decoration: none;
+    padding: 1.2em;
+    margin-top: 3em;
+}
+
+li {
+    color: black;
+    padding: .6em .7em;
+    list-style: none;
+}
+
+nav.ul.a {
+    color: black;
+    padding-left: 0;
+    margin-left: 0;
+    display: block;
+    list-style: none;
+}
+
+nav ul a:hover {
+    background: none;
+    cursor: pointer;
+}
+
+nav .close {
+    float: right;
+    margin: 1em .8em;
+    width: 1.2em;
+    height: 1.2em;
+    cursor: pointer;
+}
+
+.open-nav {
+    transform: translateX(0);
+}
+
+@media only screen and (min-width:600px) {
+    body {
+        margin: 0;
+        font-size: medium;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    nav ul li {
+        color: black;
+        padding: .5em 0;
+    }
+    nav ul a:hover {
+        background: none;
+        text-decoration: none;
+        color: blue;
+    }
+    nav .close {
+        float: right;
+        margin-top: 1em;
+        width: 1.2em;
+        height: 1.2em;
+        cursor: pointer;
+    }
+    .header img {
+        cursor: pointer;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .menu {
+        display: none;
+    }
+    .close {
+        display: none;
+    }
+    nav {
+        transform: translateX(0);
+        position: unset;
+        display: block;
+        width: auto;
+        height: auto;
+        background: none;
+    }
+    nav .close-menu {
+        display: none;
+    }
+    nav ul {
+        display: flex;
+        margin: 0;
+        list-style: none;
+    }
+    nav ul a {
+        color: black;
+        padding: 1.5em 1.5em;
+    }
+    nav ul a:hover {
+        background: none;
+        text-decoration: none;
+        color: blue;
+    }
+    .product-item {
+        display: flex;
+        background: white;
+        border: darkgrey 1px solid;
+        font-size: medium;
+    }
+}
+
+.txt-heading {
+    font: larger;
+    color: darkblue;
+    border-bottom: 2px solid darkblue;
+    overflow: auto;
+}
+
+.btnAddAction {
+    padding: 5px 10px;
+    margin-left: 5px;
+    background-color: #38f738;
+    border: #38f738 1px solid;
+    color: navy;
+    float: right;
+    text-decoration: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#product-grid {
+    width: 100%;
+    margin: 12px;
+    padding: 0;
+}
+
+#product-grid .txt-heading {
+    margin-bottom: 15px;
+}
+
+.product-item {
+    display: inline-table;
+    background: white;
+    margin-left: 10px;
+    margin-right: 0;
+    border: darkgray 1px solid;
+    font-size: normal;
+    width: 18%;
+}
+
+.product-image {
+    background-color: none;
+    width: fit-content;
+}
+
+.product-image img {
+    width: 100%;
+}
+
+.product-quantity {
+    padding: 5px 10px;
+    border-radius: 30px;
+    border: silver 1px solid;
+}
+
+.product-tile-footer {
+    padding: 30px 15px 0px 15px;
+    overflow: auto;
+}
+
+.clear-float {
+    clear: both;
+}
+
+.demo-input-box {
+    border-radius: 2px;
+    border: grey 2px solid;
+    padding: 1px 1px;
+}
+
+
+/* This is for the Footer */
+
+.base {
+    position: absolute;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.footer ul {
+    margin: 0;
+    padding: .9em;
+    display: flex;
+    background-color: darkgrey;
+}
+
+.footer ul img {
+    width: 1.5em;
+    margin-top: 0;
+    cursor: pointer;
+}
+
+.copyright {
+    text-align: center;
+    padding: .5em .5em .1em .5em;
+    background-color: darkgray;
+    margin: 0;
+}
+
+.copyright img {
+    padding: 0;
+    margin-top: 2px;
+    height: 1.2em;
+}
+
+
+/* This is for the cart.php */
+
+.cart-icon {
+    height: 28px;
+    margin: 2px;
+}
+
+#shopping-cart {
+    margin: 0;
+}
+
+#shopping-cart table {
+    width: 100%;
+    background-color: lightgreen;
+}
+
+#shopping-cart table td {
+    background-color: lightgreen;
+}
+
+#btnEmpty {
+    background-color: darkgrey;
+    border: darkgray 1px solid;
+    padding: 5px 10px;
+    color: red;
+    float: right;
+    text-decoration: none;
+    border-radius: 30px;
+    margin: 10px 10px;
+}
+
+.tbl-cart {
+    font-size: 0.9em;
+    margin-top: 10px;
+    border: navy 1px solid;
+    scroll-behavior: smooth;
+}
+
+.tbl-cart th {
+    font-weight: bold;
+}
+
+.product-title {
+    margin-bottom: 20px;
+    z-index: 99;
+}
+
+.product-price {
+    float: left;
+}
+
+.cart-action {
+    float: left;
+}
+
+.cart-item-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: navy 1px solid;
+    padding: 5px;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+.no-records {
+    background: darkgray;
+    color: darkblue;
+    text-align: center;
+    clear: both;
+    margin: 38px 0px;
+    border: none;
+    border-radius: 10px;
+}
+
+.place-order {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+#place-order-btn {
+    cursor: pointer;
+    font-weight: bold;
+    background-color: darkgrey;
+    border: 1px solid darkslategrey;
+    padding: .5em;
+    width: 50%;
+    border-radius: 10px;
+}
+
+
+/* This is for the profile.php */
+
+.content {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.content h2 {
+    margin: 0;
+    padding: 25px 0;
+    font-size: 22px;
+    border-bottom: 1px solid #38f738;
+    color: darkblue;
+}
+
+.content>p,
+.content>div {
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+    margin: 5px 0;
+    padding: 25px;
+    background-color: #fff;
+}
+
+.content>p table td,
+.content>div table td {
+    padding: 5px;
+}
+
+.content>p table td:first-child,
+.content>div table td:first-child {
+    font-weight: bold;
+    color: darkblue;
+    padding-right: 15px;
+}
+
+.content>div p {
+    padding: 5px;
+    margin: 0 0 10px 0;
+}
+
+
+/* This is for the Order.php */
+
+#order-details {
+    padding: 10px 0 100px 10px;
+}
